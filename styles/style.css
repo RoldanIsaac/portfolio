@@ -1,0 +1,90 @@
+
+*{
+    --h1-size: 60px;
+    --p-size: 22px;
+}
+
+
+@font-face {
+    font-family: open-sans;
+    src: url(../fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: poppins-bold;
+    src: url(../fonts/Poppins/Poppins-Bold.ttf);
+}
+
+
+[class*="interaction_"]{
+    font-family: open-sans;
+    font-size: var(--h1-size);
+    font-weight: 700;
+    letter-spacing: -3.9px;
+}
+
+*{
+    width: 95%;
+    margin: auto;
+}
+
+.about-container{
+    display: flex;
+    padding: 25px;
+}
+
+.about-me{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.about-me h1{
+    font-family: open-sans;
+    font-size: var(--h1-size);
+    font-weight: 700;
+    letter-spacing: -3.9px;
+}
+
+.about-me p{
+    font-family: open-sans;
+    font-size: var(--p-size);
+    font-weight:lighter;
+    color: darkgrey;
+}
+
+.about-me p a{
+    text-decoration: underline;
+    color: rgba(255, 0, 0, 0.592);
+    font-weight: 700;
+}
+
+.about-me button{
+    font-family: open-sans;
+    font-size: var(--p-size);
+    font-weight:400;
+    color: black;   
+    background-color: orange;
+    border-radius: 25px;
+    max-width: 280px;
+    height: 48px;
+    padding: 5px 10px 5px 15px;
+    box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.472);
+}
+
+.about-me button:hover{
+    background-color: rgba(255, 166, 0, 0.592);
+}
+
+
+.img-container img{ 
+    max-width: 70%;
+    border-end-start-radius: 75px;
+    border-start-start-radius: 75px;
+    box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.472);
+}
