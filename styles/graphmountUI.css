@@ -8,13 +8,22 @@
     --sea-shell: #fff5ee;
     --mint-cream: #f5fffa;
 
+
+    --black-1: #303030;
+    --black-2: #2b2b2b;
+    --black-3: #1f1f1f;
+    --black-4: #1b1c1e;
+    --black-5: #272727;
+
+
     box-sizing: border-box;
 
 }
 
 html {
     font-family: "Lucida Sans", sans-serif;
-    background-color: var(--mint-cream);
+    background-color: var(--black-4);
+    color: white;
 }
 
 /* Responsive Web Design */

@@ -1,7 +1,10 @@
 
 *{
     --h1-size: 60px;
+    --h1-size-m: 40px;
     --p-size: 22px;
+    --p-size-m: 17px;
+    --border-radius: 5px;
 }
 
 
@@ -31,6 +34,10 @@
 *{
     width: 95%;
     margin: auto;
+}
+
+.container{
+    padding: 100px;
 }
 
 .about-container{
@@ -68,7 +75,7 @@
     font-family: open-sans;
     font-size: var(--p-size);
     font-weight:400;
-    color: black;   
+    color: white;   
     background-color: orange;
     border-radius: 25px;
     max-width: 280px;
@@ -84,7 +91,54 @@
 
 .img-container img{ 
     max-width: 70%;
-    border-end-start-radius: 75px;
-    border-start-start-radius: 75px;
+    border-radius: var(--border-radius);
     box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.472);
+}
+
+
+
+
+
+
+
+/*              */
+
+.skills-container{
+    display: flex;
+}
+
+.skills-header{
+    font-family: open-sans;
+    font-size: var(--h1-size);
+    font-weight: 700;
+    letter-spacing: -3.9px;
+
+    transition: 0.2s;
+    border-bottom: solid 2px transparent;
+}
+
+.skills-header:hover{
+    border-bottom: solid 2px white;
+}
+
+.skills{
+    border: solid 1px white;
+    border-radius: var(--border-radius);
+    padding: 15px;
+    margin: 10px;
+    background-color: linear-gradient(blue, red);
+    transition: 0.2s;
+}
+
+.skills:hover{
+    background-color: #272727;
+    cursor: pointer;
+    
+}
+
+.skills h1{
+    font-family: open-sans;
+    font-size: var(--h1-size-m);
+    font-weight: 700;
+    letter-spacing: -1.0px;
 }
